@@ -21,6 +21,7 @@ namespace Vaeyori.BlockChain.Abstractions
     using System.Security.Cryptography;
     using System.Text;
     using System.Text.Json;
+    using System.Text.Json.Serialization;
 
     public abstract record Block : IBlock
     {
@@ -34,6 +35,8 @@ namespace Vaeyori.BlockChain.Abstractions
 
         public DateTimeOffset When { get; init; }
         public string PreviousHash { get; init; }
+
+        [JsonIgnore]
         public string Hash { get; init; }
 
         public string CalculateHash()
