@@ -45,7 +45,7 @@ namespace Vaeyori.BlockChain.Abstractions
         public string CalculateHash()
         {
             using var sha512 = SHA512.Create();
-            var serializedString = JsonSerializer.Serialize(this);
+            var serializedString = JsonSerializer.Serialize<object>(this);
             byte[] inputBytes = Encoding.UTF8.GetBytes(serializedString);
             byte[] outputBytes = sha512.ComputeHash(inputBytes);
 
