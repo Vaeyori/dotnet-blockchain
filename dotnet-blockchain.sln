@@ -48,7 +48,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".templates", ".templates", 
 		.pipelines\.templates\repository.tag.yml = .pipelines\.templates\repository.tag.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{25CFAF59-C683-40D0-B3DC-A63700575D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaeyori.BlockChain.Abstractions", "src\Vaeyori.BlockChain.Abstractions\Vaeyori.BlockChain.Abstractions.csproj", "{15D920C0-B4A3-4FFF-9265-40D829C2A196}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15D920C0-B4A3-4FFF-9265-40D829C2A196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D920C0-B4A3-4FFF-9265-40D829C2A196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D920C0-B4A3-4FFF-9265-40D829C2A196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D920C0-B4A3-4FFF-9265-40D829C2A196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -59,6 +73,7 @@ Global
 		{53C33331-6C1B-48C7-AA74-9CFBFED64AE4} = {6F165FB7-095F-4055-BDAA-46EC3A57FCB7}
 		{4EF35527-478C-425A-A051-90B90A1C8F09} = {FC273AE7-3B92-413D-B7A0-875DBD823CE9}
 		{92A399DE-EEA2-4D0D-8529-51E822DB7716} = {FC273AE7-3B92-413D-B7A0-875DBD823CE9}
+		{15D920C0-B4A3-4FFF-9265-40D829C2A196} = {25CFAF59-C683-40D0-B3DC-A63700575D99}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FFF2A897-D8C0-4510-8619-BDF8E92D680B}
