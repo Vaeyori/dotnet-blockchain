@@ -29,15 +29,18 @@ namespace Vaeyori.BlockChain.Abstractions
         {
             When = when;
             PreviousHash = previousHash;
-            Hash = CalculateHash();
         }
 
+        protected void Initialize()
+        {
+            Hash = CalculateHash();
+        }
 
         public DateTimeOffset When { get; init; }
         public string PreviousHash { get; init; }
 
         [JsonIgnore]
-        public string Hash { get; init; }
+        public string Hash { get; private set; }
 
         public string CalculateHash()
         {
